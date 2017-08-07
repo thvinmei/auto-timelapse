@@ -6,5 +6,5 @@ This script make timelapse movie
 ./timelapse.sh TargetDirName FPS
 ```
 
-TargetDIr is the name of the directory where the image is saved.
-FPS is frames per second of output movie file.
+- TargetDirName is the name of the directory where the image is saved.
+- FPS is frames per second of output movie file.
