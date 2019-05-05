@@ -17,4 +17,4 @@ do
     i=$(expr $i + 1)
 done
 
-avconv -r $FPS -i "%05d.jpg" -r $FPS -vcodec libx264 -crf 0 -g $FPS ../animation_${TargetDir}.mp4
+avconv -r $FPS -i "%05d.jpg" -r $FPS -vcodec libx264 -crf 0 -g $FPS ../export/tl-${TargetDir}.mp4
