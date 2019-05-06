@@ -7,13 +7,12 @@ fi
 
 TargetDir=$1
 FPS=$2
+i=0
 
 ## rename files in target folder
 cd ../$TargetDir
 mkdir -p ../tempdir
 mkdir -p ../export
-
-i=0
 
 rename 's/JPG/jpg/' *.JPG
 rename 's/JPG/jpg/' *.JPG.xmp
@@ -39,6 +38,7 @@ do
 
     composite -compose lighten $(printf %05d $j).jpg ../tempdir/$(printf %05d $j).jpg ../tempdir/$(printf %05d $i).jpg
 done
+
 ##-------------------------------
 ## 出力動画・画像の生成
 ##-------------------------------
